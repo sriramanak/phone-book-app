@@ -21,6 +21,12 @@
 		8A7A4D7F19D93E5900C138D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7A4D6119D93E5900C138D0 /* UIKit.framework */; };
 		8A7A4D8719D93E5900C138D0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A7A4D8519D93E5900C138D0 /* InfoPlist.strings */; };
 		8A7A4D8919D93E5900C138D0 /* PhoneBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7A4D8819D93E5900C138D0 /* PhoneBookTests.m */; };
+		8A7A4D9419D93E9600C138D0 /* ContactTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7A4D9319D93E9600C138D0 /* ContactTableViewController.m */; };
+		8A7A4D9719D93F3400C138D0 /* AddContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7A4D9619D93F3400C138D0 /* AddContactViewController.m */; };
+		8A7A4D9A19D94D9900C138D0 /* Contacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7A4D9919D94D9900C138D0 /* Contacts.m */; };
+		8A7A4D9C19D94F5900C138D0 /* ContactsDB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 8A7A4D9B19D94F5900C138D0 /* ContactsDB.sqlite */; };
+		8A7A4D9E19D955E400C138D0 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7A4D9D19D955E400C138D0 /* libsqlite3.0.dylib */; };
+		8A7A4DA019D9561800C138D0 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7A4D9F19D9561800C138D0 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,15 @@
 		8A7A4D8419D93E5900C138D0 /* PhoneBookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhoneBookTests-Info.plist"; sourceTree = "<group>"; };
 		8A7A4D8619D93E5900C138D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8A7A4D8819D93E5900C138D0 /* PhoneBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoneBookTests.m; sourceTree = "<group>"; };
+		8A7A4D9219D93E9600C138D0 /* ContactTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactTableViewController.h; sourceTree = "<group>"; };
+		8A7A4D9319D93E9600C138D0 /* ContactTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactTableViewController.m; sourceTree = "<group>"; };
+		8A7A4D9519D93F3400C138D0 /* AddContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddContactViewController.h; sourceTree = "<group>"; };
+		8A7A4D9619D93F3400C138D0 /* AddContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddContactViewController.m; sourceTree = "<group>"; };
+		8A7A4D9819D94D9900C138D0 /* Contacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contacts.h; sourceTree = "<group>"; };
+		8A7A4D9919D94D9900C138D0 /* Contacts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contacts.m; sourceTree = "<group>"; };
+		8A7A4D9B19D94F5900C138D0 /* ContactsDB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ContactsDB.sqlite; sourceTree = "<group>"; };
+		8A7A4D9D19D955E400C138D0 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		8A7A4D9F19D9561800C138D0 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A7A4DA019D9561800C138D0 /* libsqlite3.dylib in Frameworks */,
+				8A7A4D9E19D955E400C138D0 /* libsqlite3.0.dylib in Frameworks */,
 				8A7A4D6019D93E5900C138D0 /* CoreGraphics.framework in Frameworks */,
 				8A7A4D6219D93E5900C138D0 /* UIKit.framework in Frameworks */,
 				8A7A4D5E19D93E5900C138D0 /* Foundation.framework in Frameworks */,
@@ -101,6 +118,8 @@
 		8A7A4D5C19D93E5900C138D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8A7A4D9F19D9561800C138D0 /* libsqlite3.dylib */,
+				8A7A4D9D19D955E400C138D0 /* libsqlite3.0.dylib */,
 				8A7A4D5D19D93E5900C138D0 /* Foundation.framework */,
 				8A7A4D5F19D93E5900C138D0 /* CoreGraphics.framework */,
 				8A7A4D6119D93E5900C138D0 /* UIKit.framework */,
@@ -114,7 +133,14 @@
 			children = (
 				8A7A4D6C19D93E5900C138D0 /* AppDelegate.h */,
 				8A7A4D6D19D93E5900C138D0 /* AppDelegate.m */,
+				8A7A4D9B19D94F5900C138D0 /* ContactsDB.sqlite */,
 				8A7A4D6F19D93E5900C138D0 /* Main.storyboard */,
+				8A7A4D9519D93F3400C138D0 /* AddContactViewController.h */,
+				8A7A4D9819D94D9900C138D0 /* Contacts.h */,
+				8A7A4D9919D94D9900C138D0 /* Contacts.m */,
+				8A7A4D9619D93F3400C138D0 /* AddContactViewController.m */,
+				8A7A4D9219D93E9600C138D0 /* ContactTableViewController.h */,
+				8A7A4D9319D93E9600C138D0 /* ContactTableViewController.m */,
 				8A7A4D7219D93E5900C138D0 /* ViewController.h */,
 				8A7A4D7319D93E5900C138D0 /* ViewController.m */,
 				8A7A4D7519D93E5900C138D0 /* Images.xcassets */,
@@ -230,6 +256,7 @@
 			files = (
 				8A7A4D7619D93E5900C138D0 /* Images.xcassets in Resources */,
 				8A7A4D6819D93E5900C138D0 /* InfoPlist.strings in Resources */,
+				8A7A4D9C19D94F5900C138D0 /* ContactsDB.sqlite in Resources */,
 				8A7A4D7119D93E5900C138D0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +278,9 @@
 			files = (
 				8A7A4D7419D93E5900C138D0 /* ViewController.m in Sources */,
 				8A7A4D6E19D93E5900C138D0 /* AppDelegate.m in Sources */,
+				8A7A4D9A19D94D9900C138D0 /* Contacts.m in Sources */,
+				8A7A4D9419D93E9600C138D0 /* ContactTableViewController.m in Sources */,
+				8A7A4D9719D93F3400C138D0 /* AddContactViewController.m in Sources */,
 				8A7A4D6A19D93E5900C138D0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +486,7 @@
 				8A7A4D8E19D93E5900C138D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8A7A4D8F19D93E5900C138D0 /* Build configuration list for PBXNativeTarget "PhoneBookTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +495,7 @@
 				8A7A4D9119D93E5900C138D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
